@@ -1,6 +1,6 @@
 import { ref } from "@vue/reactivity";
 
-export const Composable = () => {
+const Composable = () => {
   const colors = ["green", "red", "blue", "purple"];
   let message = ref("Pick a color...");
   const matchColor = (value) => {
@@ -18,3 +18,4 @@ export const Composable = () => {
   //   Exposed properties from the composable
   return { colors, message, matchColor };
 };
+export default Composable;
